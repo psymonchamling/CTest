@@ -19,12 +19,24 @@
 // If you are programming in C or C++, the function signature is
 // 	int isInertial(int a[ ], int len) where len is the number of elements in the array
 
+// Some other examples: 
+// if the input array is                              return                reason
+// {1}                                                0                     fails condition (a) - the maximum value must be even
+// {2}                                                0                     fails condition (b) - the array must contain at least one odd value.
+// {1, 2, 3, 4}                                       0                     fails condition (c) - 1 (which is odd) is not greater than all even values other than the maximum (1 is less than 2 which is not the maximum)
+// {1, 1, 1, 1, 1, 1, 2}                              1                     there is no even number other than the maximum. Hence, there can be no other even values  that are greater than 1.
+// {2, 12, 4, 6, 8, 11}                               1                     11, the only odd value is greater than all even values except 12 which is the maximum value in the array.
+// {2, 12, 12, 4, 6, 8, 11}                           1                     same as previous, i.e., it is OK if maximum value occurs more than once.#include <stdbool.h>
+// {-2, -4, -6, -8, -11}                              0                     -8, which is even, is not the maximum value but is greater than -11 which is odd
+// {2, 3, 5, 7}                                       0                     the maximum value is odd
+// {2, 4, 6, 8, 10}                                   0                     there is no odd value in the array.
+
+
 #include <stdio.h>
 
 int main()
 {
   int a[] ={2, 4, 6, 8, 10};
-
 
   printf("Is Madhav array? :  %d\n", isInertial(a, 4));
   return 0;
