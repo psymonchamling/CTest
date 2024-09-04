@@ -12,10 +12,7 @@
 
 // Write a function named isMinMaxDisjoint that returns 1 if its array argument is minmax-disjoint, otherwise it returns 0.
 
-// If you are programming in Java or C#, the function signature is
-// int isMinMaxDisjoint(int[ ] a)
-
-// If you are programming in C or C#, the function signature is
+// If you are programming in C, the function signature is
 // int isMinMaxDisjoint(int a[ ], int len) where len is the number of elements in the array.
 
 // Examples of arrays that are not minMaxDisjoint
