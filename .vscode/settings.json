@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.tsx": "typescriptreact",
+    "q19_countrepresentationsc": "c"
+  }
+}
