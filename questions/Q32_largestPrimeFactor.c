@@ -60,6 +60,8 @@ int largestPrimeFactor(int n)
   return largestPrimeFactor;
 }
 
-// Note: If there is multiple filter to apply, apply the first with the easiest & low demanding one.
-// For eg: finding largest prime factor, first check if it is factor or not, then only check for prime
-// because checking a number is prime or not will take more calculation than that of factor.
+// Note: 
+// 1. If there is multiple filter to apply, apply the first with the easiest & low demanding one.
+//    For eg: finding largest prime factor, first check if it is factor or not, then only check for prime
+//    because checking a number is prime or not will take more calculation than that of factor.
+// 2. Separate code for number two for performance in the following loop
